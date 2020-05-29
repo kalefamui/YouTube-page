@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* NAVBAR */
+
+.navbar{
+    background-color: #ffffff;
+    display: flex;
+    padding: 1em 1.5em;
+    height: 56px;
+    align-items: center;
+}
+
+ul>li{
+    list-style: none;
+}
+
+#menu-icon{
+    padding-right: 1.5em;
+    filter: opacity(50%);
+}
+
+#youtube-logo{
+    height: 18px;
+    width: auto;
+    padding-right: 1.5em;
+}
+
+#search-bar{
+    display: flex;
+    border: 1px #ccc solid;
+    border-radius: 2px;
+    width: 41em;
+    height: 32px;
+    margin: 10em;
+    align-items: center;
+}
+
+#search-bar input{
+    border: none;
+    margin: 0 0 0 4px;
+    padding: 1px 2px;
+    width: 37em;
+    height: 30px;
+    font-size: 16px;
+}
+
+#search-bar button{
+    width: 62px;
+    align-content: center;
+    border: none;
+    background-color: #f8f8f8;
+    border-left: 1px #ccc solid;    
+}
+
+#camera-logo{
+    padding-right: 1.5em;
+    filter: opacity(50%);
+}
+
+#application-logo{
+    padding-right: 1.5em;
+    filter: opacity(50%);
+}
+
+#notification-logo{
+    padding-right: 1.5em;
+    filter: opacity(50%);
+}
+
+#user-logo{
+    width: 32px;
+    height: auto;
+    filter: opacity(50%);
+}
+
+
+/* CONTENT CONTAINER */
+
+.container{
+    display: flex;
+    padding: 2em 2em;
+    background-color: #f9f9f9;
+}
+
+.first-col{
+    width: 57em;
+    align-items: center;
+}
+
+.second-col{
+    width: 29em;
+    height: 100px;
+}
+
+iframe{
+    width: 53em;
+    height: 29em;
+}
+
+.first-col h2{
+    font-weight: 400;
+    line-height: 2.4rem;
+    color: #030303;
+    font-size: 18px;
+    margin: .5em 0;
+}
+
+.about{
+    display: flex;
+    justify-content: space-between;
+    color: #606060;
+    font-size: 14px;
+    padding-right: .5em;
+    border-bottom: 2px #ccc solid;
+}
+
+.about button{
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    color: #606060;
+    padding: 0 .5em 1em .5em;
+    cursor: pointer;
+}
+
+.icon{
+    width: 20px;
+    height: 20px;
+    filter: opacity(50%);
+    cursor: pointer;
+}
+
+.about button:hover{
+    border-bottom: 2px #606060 solid;
+}
