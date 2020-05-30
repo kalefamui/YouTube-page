@@ -15,6 +15,7 @@
     padding: 1em 1.5em;
     height: 56px;
     align-items: center;
+    position: fixed;
 }
 
 ul>li{
@@ -85,7 +86,7 @@ ul>li{
 
 .container{
     display: flex;
-    padding: 2em 2em;
+    padding: 4em 2em;
     background-color: #f9f9f9;
 }
 
@@ -95,8 +96,8 @@ ul>li{
 }
 
 .second-col{
-    width: 29em;
-    height: 100px;
+    margin: 0 .5em 0 2em;
+    width: 402px;
 }
 
 iframe{
@@ -139,4 +140,217 @@ iframe{
 
 .about button:hover{
     border-bottom: 2px #606060 solid;
+}
+
+.video-description{
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 1em;
+}
+
+.top-description{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 66px;
+}
+
+.channel-logo{
+    margin: .3em 1em 0 .5em;
+}
+
+.channel-name h3{
+    margin-top: 1.3em;
+    font-size: 14px;
+}
+
+.channel-name p{
+    font-size: 13px;
+    color: #606060;
+}
+
+.top-description button{
+    margin: 14px 16px 14px auto;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    background: #cc0000;
+    padding: 5px 16px;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+}
+
+.botton-description{
+    margin: 1em 4em;
+    font-size: 14px;
+    color: #030303;
+    line-height: 1.5em;
+}
+
+.botton-description a{
+    text-decoration: none;
+    color: #065fd4;
+}
+
+.show-more{
+    margin: .8em 0;
+    color: #606060;
+    font-size: 13px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.filtercomment{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin: 1em;
+}
+
+.comment{
+    color: #030303;
+    font-size: 16px;
+    margin-right: 32px;
+}
+
+.filtercomment img{
+    margin-right: 8px;
+}
+
+.filter-text{
+    color: #606060;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.comment-line{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+.comment-line img{
+    height: 35px;
+}
+
+.comment-line input{
+    width: 100%;
+    cursor: text;
+    padding-bottom: 4px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* SECOND COLUM WITH VIDEOS */
+
+
+.autoplay{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.next{
+    font-size: 16px;
+    color: #030303;
+}
+
+.autoplay-text{
+    margin-left: auto;
+    font-size: 13px;
+    margin-right: 1em;
+    color: #606060;
+}
+
+/* CREATINHG SWITCH */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 36px;
+    height: 14px;
+}
+  
+/* Hide default HTML checkbox */
+.switch input {
+opacity: 0;
+width: 0;
+height: 0;
+}
+
+/* The slider */
+.slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #ccc;
+-webkit-transition: .4s;
+transition: .4s;
+}
+
+.slider:before {
+position: absolute;
+content: "";
+height: 20px;
+width: 20px;
+left: 0px;
+bottom: -2px;
+background-color: white;
+-webkit-transition: .4s;
+transition: .4s;
+}
+
+input:checked + .slider {
+background-color: #2196F3;
+}
+
+input:focus + .slider {
+box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+-webkit-transform: translateX(16px);
+-ms-transform: translateX(16px);
+transform: translateX(16px);
+}
+
+/* Rounded sliders */
+.slider.round {
+border-radius: 36px;
+}
+
+.slider.round:before {
+border-radius: 50%;
+}
+
+
+/* CREATING VIDEOS BOX */
+
+.next-video{
+    display: flex;
+    flex-direction: row;
+    padding: 16px 0;
+    border-bottom: 1px #ccc solid;
+}
+
+.about-video-box{
+    margin-left: 1em;
+}
+
+.about-video-box a{
+    color: #030303;
+    font-size: 14px;
+    padding-bottom: .5em;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.about-video-box p{
+    color: #606060;
+    font-size: 13px;
+    line-height: 1.5em;
 }
